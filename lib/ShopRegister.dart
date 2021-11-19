@@ -101,6 +101,9 @@ class ShopRegisterApp extends State<ShopRegister> {
             Padding(
               padding: EdgeInsets.only(left:15,top: 15,right: 15,bottom: 0),
               child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    minimumSize: Size(200,48)
+                ),
                 onPressed: (){
                   registrar();
                   nombreTienda.clear();

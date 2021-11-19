@@ -6,6 +6,7 @@ class Shop extends StatefulWidget {
 }
 
 class ShopApp extends State<Shop> {
+  @override
   Widget build(BuildContext context) {
     Widget titleSection = Container(
       padding: const EdgeInsets.all(32),
@@ -33,23 +34,17 @@ class ShopApp extends State<Shop> {
           ),
           Container(
             width: 80,
-              height: 80,
+            height: 80,
             child: Image.asset('image/crapidas.png'),
           ),
-          ElevatedButton(onPressed: (){}, child: Text('Entrar'))
+          ElevatedButton(onPressed: () {}, child: Text('Entrar'))
         ],
       ),
     );
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Lista de tiendas'),
-      ),
-      body: ListView(
-        children: [
-          titleSection,
-          titleSection
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: Text('Lista de tiendas'),
+        ),
+        body: Center());
   }
 }
